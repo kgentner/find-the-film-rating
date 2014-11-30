@@ -4,5 +4,5 @@ var $ = require('jquery');
 var findRating = require('./findRating');
 
 $('#movieSubmit').on('click', function() {
-  findRating($('#movieTitle').val());
+  findRating($('#movieInput').val());
 });

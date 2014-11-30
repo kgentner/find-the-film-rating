@@ -5,7 +5,6 @@ var request = require('superagent');
 var bodyParser = require('body-parser');
 var app = express();
 
-//app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/build'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -20,10 +19,11 @@ app.post('/', function(req, res) {
     .get(rottenURL)
     .end(function(err, rottenData) {
       var parsedData = JSON.parse(rottenData.text);
-      var movieTitle = parsedData.movies.title;
-      var mpaaRating = parsedData.movies.mpaa_rating;
+      //console.log(parsedData);
+      var movieTitle = parsedData.movies[0].title;
+      var mpaaRating = parsedData.movies[0].mpaa_rating;
 
-      //the answer is returned as json to $ajax call
+      //json returned to $ajax call in findRatings.js
       res.json({ title: movieTitle, mpaa: mpaaRating});
     });
 });

@@ -1,11 +1,11 @@
 'use strict';
 var $ = require('jquery');
 
-var findRating = function(movieTitle) {
+var findRating = function(movieInput) {
   $.ajax({
     url: '/',
     type: 'POST',
-    data: {title: movieTitle},
+    data: {title: movieInput},
     success: function(data) {
       if (data.msg === 'G') {
         $('#app').html(
