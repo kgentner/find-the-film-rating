@@ -6,6 +6,7 @@
   "dependencies": {
     "body-parser": "^1.9.3",
     "express": "^4.10.4",
+    "node-sass": "^1.2.3",
     "superagent": "^0.21.0"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-jscs": "^1.0.0",
+    "grunt-sass": "^0.16.1",
     "grunt-simple-mocha": "^0.4.0",
     "mocha": "^2.0.1"
   },

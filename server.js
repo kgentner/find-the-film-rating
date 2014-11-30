@@ -19,7 +19,6 @@ app.post('/', function(req, res) {
     .get(rottenURL)
     .end(function(err, rottenData) {
       var parsedData = JSON.parse(rottenData.text);
-      //console.log(parsedData);
       var movieTitle = parsedData.movies[0].title;
       var mpaaRating = parsedData.movies[0].mpaa_rating;
 
