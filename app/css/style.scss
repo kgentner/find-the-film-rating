@@ -1,15 +1,16 @@
+$font-stack:Arial;
+$primary-color: #545454;
+
 body {
-    background-color: #545454;
+  font: 150% $font-stack;
+  background-color: $primary-color;
 }
 
 div {
-    font-family: "Arial";
     text-align: center;
     color: #00FFFF;
-    font-size: 150%;
 }
 
 p {
     color: #00FF00;
-    font-size: 150%;
 }

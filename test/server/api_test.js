@@ -7,16 +7,16 @@ chai.use(chaihttp);
 require('../../server');
 
 describe('Server API', function() {
-  it('should return JSON with title and rating keys', function(done) {
+  it('should return JSON with the correct keys', function(done) {
+    var movieInput = 'Red Dawn';
     chai.request('http://localhost:3000')
     .post('/')
-    .send({title: 'Red Dawn'})
+    .type('form')
+    .send({title: movieInput})
     .end(function(err, res) {
-      console.log(res.body);
       expect(err).to.eql(null);
       expect('Content-Type', /json/);
-      expect(res.body).to.include.keys('title');
-      expect(res.body).to.include.keys('mpaa');
+      expect(res.body).to.include.keys('title' && 'mpaa');
       done();
     });
   });
