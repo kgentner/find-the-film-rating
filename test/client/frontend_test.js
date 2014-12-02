@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 var isClicked = require('../../app/js/isClicked');
 var isEntered = require('../../app/js/isEntered');
 
-describe('Clicking & Entering', function() {
+describe('Very Simple Client-Side JS Testing', function() {
   it('should return true when clicked', function() {
     expect(isClicked()).to.eql(true);
   });

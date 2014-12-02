@@ -14,7 +14,6 @@ app.post('/', function(req, res) {
   'http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=' +
   process.env.ROTTENAPI + '&q=' + movieName + '&page_limit=1';
 
-  //superagent sends get request to Rotten Tomatoes
   request
     .get(rottenURL)
     .end(function(err, rottenData) {
@@ -22,7 +21,6 @@ app.post('/', function(req, res) {
       var movieTitle = parsedData.movies[0].title;
       var mpaaRating = parsedData.movies[0].mpaa_rating;
 
-      //json returned to $ajax call in findRatings.js
       res.json({ title: movieTitle, mpaa: mpaaRating});
     });
 });
