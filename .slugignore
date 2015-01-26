@@ -1,0 +1,12 @@
+README.md
+package.json
+Gruntfile.js
+bower.json
+.travis.yml
+.jshintrc
+.jscsrc
+test
+node_modules
+bower_components
+app
+.DS_Store
