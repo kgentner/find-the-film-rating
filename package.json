@@ -26,7 +26,8 @@
   },
   "scripts": {
     "test": "node_modules/grunt-cli/bin/grunt",
-    "postinstall": "node_modules/grunt-cli/bin/grunt"
+    "start": "node server.js",
+    "postinstall": "bash ./post_install.sh"
   },
   "repository": {
     "type": "git",
