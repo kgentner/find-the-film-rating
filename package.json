@@ -1,5 +1,5 @@
 {
-  "name": "whats-it-rated",
+  "name": "find-the-film-rating",
   "version": "1.0.0",
   "description": "Input a movie - see it's MPAA rating",
   "main": "server.js",
@@ -26,7 +26,7 @@
   },
   "scripts": {
     "test": "node_modules/grunt-cli/bin/grunt",
-    "postinstall": "grunt"
+    "postinstall": "node_modules/grunt-cli/bin/grunt"
   },
   "repository": {
     "type": "git",
