@@ -1,0 +1,16 @@
+$font-stack:Arial;
+$primary-color: #545454;
+
+body {
+  font: 150% $font-stack;
+  background-color: $primary-color;
+}
+
+div {
+    text-align: center;
+    color: #00FFFF;
+}
+
+p {
+    color: #00FF00;
+}
