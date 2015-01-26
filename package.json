@@ -25,6 +25,7 @@
     "mocha": "^2.0.1"
   },
   "scripts": {
+    "build": "grunt build:dev",
     "test": "node_modules/grunt-cli/bin/grunt"
   },
   "repository": {
