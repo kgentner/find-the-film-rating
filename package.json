@@ -25,9 +25,8 @@
     "mocha": "^2.0.1"
   },
   "scripts": {
-    "postinstall": "npm run build",
-    "build": "grunt",
-    "test": "node_modules/grunt-cli/bin/grunt"
+    "test": "node_modules/grunt-cli/bin/grunt",
+    "postinstall": "grunt"
   },
   "repository": {
     "type": "git",
