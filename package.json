@@ -1,5 +1,5 @@
 {
-  "name": "find-the-film-rating",
+  "name": "Find the Film Rating",
   "version": "1.0.0",
   "description": "Input a movie - see it's MPAA rating",
   "main": "server.js",
@@ -33,12 +33,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kgentner/whats-it-rated.git"
+    "url": "https://github.com/kgentner/find-the-film-rating.git"
   },
   "author": "Karl Gentner",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kgentner/whats-it-rated/issues"
+    "url": "https://github.com/kgentner/find-the-film-rating/issues"
   },
-  "homepage": "https://github.com/kgentner/whats-it-rated"
+  "homepage": "https://github.com/kgentner/find-the-film-rating"
 }

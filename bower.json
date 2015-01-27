@@ -1,7 +1,7 @@
 {
-  "name": "whats-it-rated",
-  "version": "0.0.0",
-  "homepage": "https://github.com/kgentner/whats-it-rated",
+  "name": "Find the Film Rating",
+  "version": "1.0.0",
+  "homepage": "https://github.com/kgentner/find-the-film-rating",
   "authors": [
     "kgentner <gentnerkarl@gmail.com>"
   ],
