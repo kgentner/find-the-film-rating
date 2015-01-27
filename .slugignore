@@ -1,8 +1,4 @@
-README.md
 .travis.yml
 .jshintrc
 .jscsrc
 test
-node_modules
-bower_components
-.DS_Store
