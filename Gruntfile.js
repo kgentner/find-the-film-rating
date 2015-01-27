@@ -81,6 +81,8 @@ module.exports = function(grunt) {
     'browserify:test']);
   grunt.registerTask('build:dev', ['clean:dev', 'browserify:dev', 'copy:dev',
     'sass:dev']);
+  grunt.registerTask('heroku', ['clean:dev', 'browserify:dev', 'copy:dev',
+    'sass:dev']);
   grunt.registerTask('default', ['build:dev', 'test']);
 };
 //
