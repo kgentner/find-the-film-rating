@@ -29,7 +29,7 @@
   "scripts": {
     "test": "node_modules/grunt-cli/bin/grunt",
     "start": "node server.js",
-    "postinstall": "bower install"
+    "postinstall": "bower install; grunt heroku"
   },
   "repository": {
     "type": "git",
